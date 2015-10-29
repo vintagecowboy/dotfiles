@@ -1,6 +1,4 @@
 # Set up Homebrew
-export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=/etc/Caskroom"
-
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install Linux Utilities instead of BSD
@@ -20,14 +18,16 @@ brew doctor
 # Install Cask and Apps
 # brew cask install 1password
 brew cask install alfred
+brew cask install bartender
 brew cask install chocolat
 brew cask install entropy
-brew cask install forklift
 brew cask install flux
+brew cask install forklift
 brew cask install google-chrome
 brew cask install google-drive
 brew cask install hazel
 brew cask install nvalt
+brew cask install skype
 brew cask install soulver
 brew cask install spotify
 brew cask install transmission
