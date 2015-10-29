@@ -1,7 +1,7 @@
 # dotfiles
 
 # Set up SSH
-ssh-keygen -t rsa -b 4096 -C "richardradley@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "my@email.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 
@@ -15,8 +15,8 @@ Add / replace key
 ssh -T git@github.com
 
 # Set Up Git
-git config --global user.email "richardradley@gmail.com"
-git config --global user.name "vintagecowboy"
+git config --global user.email "my@email.com"
+git config --global user.name "username"
 git config --global push.default simple
 
 # Now clone repository (cd to ~/Development or similar)
