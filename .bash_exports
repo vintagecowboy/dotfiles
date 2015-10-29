@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# bash_exports
+
+# Make vim the default editor
+export EDITOR="vim"
+
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=/usr/local/Caskroom"

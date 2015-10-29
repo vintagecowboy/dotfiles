@@ -1,0 +1,71 @@
+# Set up Homebrew
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=/etc/Caskroom"
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install Linux Utilities instead of BSD
+brew install coreutils
+brew install findutils
+brew install bash
+brew tap homebrew/dupes
+brew tap caskroom/fonts
+brew install caskroom/cask/brew-cask
+brew install homebrew/dupes/grep
+brew install git
+brew install vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+brew cleanup
+brew doctor
+
+# Install Cask and Apps
+# brew cask install 1password
+brew cask install alfred
+brew cask install chocolat
+brew cask install entropy
+brew cask install forklift
+brew cask install flux
+brew cask install google-chrome
+brew cask install google-drive
+brew cask install hazel
+brew cask install nvalt
+brew cask install soulver
+brew cask install spotify
+brew cask install transmission
+brew cask install tunnelblick
+brew cask install typed
+brew cask install vlc
+brew cask install vmware-fusion
+
+# Install Finder Enhancements
+brew cask install qlcolorcode
+brew cask install qlmarkdown
+
+# Clean-up                                         
+brew cask alfred link
+brew cask cleanup
+brew cask update
+brew cask doctor
+
+# OSX Enhancements
+chflags nohidden ~/Library/
+defaults write com.apple.finder QLEnableTextSelection -bool true
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+defaults write NSGlobalDomain KeyRepeat -int 0.02
+defaults write -g com.apple.trackpad.scaling 2
+defaults write -g com.apple.mouse.scaling 2.5
+defaults write com.apple.BezelServices kDimTime -int 300
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
+defaults write com.apple.finder FXPreferredViewStyle clmv
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+mkdir ~/Pictures/Screenshots
+defaults write com.apple.screencapture location ~/Pictures/Screenshots
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+defaults -currentHost write -globalDomain AppleFontSmoothing -int 0
+sudo scutil --set ComputerName "odin"
+sudo scutil --set HostName "odin"
+sudo scutil --set LocalHostName "odin"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "odin"
