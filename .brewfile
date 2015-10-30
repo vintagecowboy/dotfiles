@@ -11,9 +11,11 @@ brew install caskroom/cask/brew-cask
 brew install homebrew/dupes/grep
 brew install git
 brew install vim
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 brew cleanup
 brew doctor
+
+# Set up Vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Install Cask and Apps
 # brew cask install 1password
