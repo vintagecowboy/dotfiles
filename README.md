@@ -21,3 +21,6 @@ git config --global push.default simple
 
 ## Now clone repository (cd to ~/Development or similar)
 git clone https://github.com/vintagecowboy/dotfiles.git
+
+# Change to dotfiles directory
+source bootstrap.sh
