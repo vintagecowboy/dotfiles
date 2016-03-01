@@ -1,6 +1,3 @@
-# Set up Homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 # Install Linux Utilities instead of BSD
 brew install coreutils
 brew install findutils
@@ -9,7 +6,7 @@ brew tap homebrew/dupes
 brew tap caskroom/fonts
 brew install caskroom/cask/brew-cask
 brew install homebrew/dupes/grep
-brew install git
+# brew install git
 brew install vim
 brew cleanup
 brew doctor
@@ -20,7 +17,7 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Install Cask and Apps
 # brew cask install 1password
 brew cask install alfred
-brew cask install bartender
+# brew cask install bartender
 brew cask install chocolat
 brew cask install entropy
 brew cask install flux
@@ -29,14 +26,15 @@ brew cask install google-chrome
 brew cask install google-drive
 brew cask install hazel
 brew cask install nvalt
+brew cask install shimo
 brew cask install skype
 brew cask install soulver
 brew cask install spotify
 brew cask install transmission
-brew cask install tunnelblick
-brew cask install typed
+# brew cask install tunnelblick
+# brew cask install typed
 brew cask install vlc
-brew cask install vmware-fusion
+# brew cask install vmware-fusion
 
 # Install Finder Enhancements
 brew cask install qlcolorcode
@@ -67,7 +65,7 @@ mkdir ~/Pictures/Screenshots
 defaults write com.apple.screencapture location ~/Pictures/Screenshots
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 0
-sudo scutil --set ComputerName "odin"
-sudo scutil --set HostName "odin"
-sudo scutil --set LocalHostName "odin"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "odin"
+sudo scutil --set ComputerName "some.hostname"
+sudo scutil --set HostName "some.hostname"
+sudo scutil --set LocalHostName "some.hostname"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "some.hostname"
