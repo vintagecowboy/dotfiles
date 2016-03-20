@@ -28,6 +28,7 @@ brew cask install hazel
 brew cask install nvalt
 brew cask install shimo
 brew cask install skype
+brew cask install sonos
 brew cask install soulver
 brew cask install spotify
 brew cask install transmission
